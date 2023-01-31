@@ -1,5 +1,11 @@
-n = int(input())
-s = sum(range(1, n+1))
-for _ in range(n-1):
-   s -= int(input())
-print(s)
+import random  
+N=int(input())
+cntList = list(range(1,N+1)) 
+mylist = list(range(1,N+1))  
+delNum = random.choice(mylist) 
+mylist.remove(delNum)  
+print ('список карт: %s' % (cntList)) 
+print ('Список без карты: %s' % (mylist)) 
+print (' Удаленная карта: %s' % (delNum)) 
+findCard = ((set(cntList)) - (set(mylist))) 
+print (' Удаленная карта: %s' % (findCard))
