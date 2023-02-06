@@ -7,4 +7,3 @@ mylist.remove(delNum)
 print ('список карт: %s' % (cntList)) 
 print ('Список без карты: %s' % (mylist)) 
 print (' Удаленная карта: %s' % (delNum)) 
-
