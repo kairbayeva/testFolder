@@ -1,4 +1,9 @@
-a = int(input())
-b = int(input())
-for i in range(a, b + 1):
-    print(i)
+import random  
+N=int(input())
+cntList = list(range(1,N+1)) 
+mylist = list(range(1,N+1))  
+delNum = random.choice(mylist) 
+mylist.remove(delNum)  
+print ('карталар тізімі: %s' % (cntList)) 
+print ('жоғалған картасыз: %s' % (mylist)) 
+print ('жоғалған карта: %s' % (delNum)) 
